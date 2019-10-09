@@ -1,0 +1,190 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+\begin_inset Quotes eld
+\end_inset
+
+Amplificadores de clase B
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Date
+08/10/19
+\end_layout
+
+\begin_layout Standard
+Los amplificadores de clase B se caracterizan por tener intensidad casi
+ nula a través de sus transistores cuando mo hya señal en la entrada del
+ circuito, por lo que en reposo el cosumo es casi nulo.
+\end_layout
+
+\begin_layout Standard
+¿Cuáles son las caracteristicas de los amplificadores de clase B:
+\end_layout
+
+\begin_layout Standard
+Se les denomina amplificadores de clase B, cuando el voltaje de polarización
+ y la máxima amplitus de la señal entrante poseen valores que hacen que
+ la corriente de salida circules durante el semiciclo de la señal de entrada.
+\end_layout
+
+\begin_layout Standard
+Las caracteristicas principales de esre tipo de amplificadores es el alto
+ factor de amplificación.
+\end_layout
+
+\begin_layout Standard
+Amplificadores de clase AB: Estos basicamente son la mezcla de los dos anteriore
+s.
+ Cuando el voltaje de polarización y la máxima amplitud de la señal entrante
+ poseen valores que hacen que la corriente de salida circulen durante menos
+ del ciclo completo y más de la mitad del ciclo de la señal de entrada,
+ se les denomina: Amplificadores de potencia clase AB.
+\end_layout
+
+\begin_layout Standard
+Dado que ocupan un lugar intermedio entre los de clase A y AB, cuando el
+ voltaje de la señal es moderado funciona como uno de clase A, cuando la
+ señal es fuerte se desempeña como uno de clase B, con una eficiencia y
+ deformidad moderadas.
+\end_layout
+
+\begin_layout Standard
+Ventajas de los amplificadores de clase B:
+\end_layout
+
+\begin_layout Itemize
+Poseen bajo consumo en reposo.
+\end_layout
+
+\begin_layout Itemize
+Aprovechan al máximo la Coriirente entregada por la fuente.
+\end_layout
+
+\begin_layout Itemize
+Intensidad casi nula cuando esta esta en reposo.
+\end_layout
+
+\begin_layout Standard
+Desventajas de los amplificadores de clase B:
+\end_layout
+
+\begin_layout Itemize
+Producen los armónicos, y es mayor cuando ni tienen transistores de salida
+ con la mismas características técnicas, debido a esto se les suele polarizae
+ de forma que se kes introduce una pequeña polarización directa.
+ Con esto, se consigue desplazar las curvas y se disminuyen dicha ditribusión.
+\end_layout
+
+\begin_layout Standard
+Aplicaciones de los amplificadores de clase B:
+\end_layout
+
+\begin_layout Itemize
+Sistemas telefónicos.
+\end_layout
+
+\begin_layout Itemize
+Transmisores de seguridad portátiles.
+\end_layout
+
+\begin_layout Itemize
+Sistemas de aviso, aunque no en audio.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+https://www.ecured.cu/Amplificador_Clase_B
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+http://tutorialesdeelectronicabasica.blogspot.com/2018/06/amplificador-de-clase-b-
+y-amplificador.html
+\end_layout
+
+\end_body
+\end_document
