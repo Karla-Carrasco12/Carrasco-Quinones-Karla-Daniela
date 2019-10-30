@@ -1,0 +1,96 @@
+\documentclass[letterpaper]{article}
+\usepackage{underscore}
+\usepackage[left=2.0cm, right=2.0cm, top=1.0cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{graphics}
+\usepackage[spanish]{babel}
+\usepackage{lipsum}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{csquotes}
+\usepackage{color}
+\usepackage{colortbl}
+\usepackage{xcolor}
+
+\title{EV\_2\_8\_calcular\_los\_parametros\_de\_circuitos\_de\_activación\_de\_transistores\_de\_potencia}
+\author{Carrasco Quiñones Karla Daniela}
+\date{28/October/2019}
+
+\begin{document}
+\begin{figure}[t]
+    \includegraphics[width=6cm]{img/logo.png}
+\end{figure}
+\vspace{2cm}
+\maketitle
+\vspace{12cm}
+\begin{center}
+   Universidad politécnica de la zona metropolitana de Guadalajara.\\
+Sistemas electrónicos de interfaz.\\
+4-A Mecatrónica.\\ 
+\end{center}
+\newpage
+%\begin{LARGE}
+%\textbf{Calculo resistencia base:}
+%\end{LARGE}
+\begin{large}
+    Para la resistencia que se debe emplear en la base para que el trancistor actue en corte y saturación se hace la fórmula siguiente donde:\\\\
+    $R_{base}$ es la resistecia que se empleará.\\\\
+    $V_{IN}$: Es el voltaje que va a entrar en la base.\\\\
+    $V_{Activacion}$: Es el voltaje de ruptura en el transistor\\\\
+    $hFe$ = Forward current gain, es la ganancia que tendrá en corriente un transistor, este se obtiene al medir el transistor con el multímetro o mediante el data sheet.\\\\
+    $I_{c}$ es el consumo del circuito conectado al transistor de colector a emisor.\\\\
+    El valor de resistencia obtenido será el ideal para mantener el transistor en conducción sin dañar la base con demasiado flujo de corriente. 
+    \vspace{.3cm}
+    
+    \begin{figure}[htbp]
+    \begin{huge}
+    $R_{base}=\frac{(V_{IN}-V_{Activacion})hFe)}{I_{c}}$
+    \end{huge}
+    \end{figure}
+    
+    \begin{itemize}
+        \item Se busca el material de nuestro transistor
+        \begin{itemize}
+            \item Germanio = 0.3V
+            \item Silicio = 0.7V
+        \end{itemize}
+        \item Para después identificar el voltaje que entrará, este llamado Voltaje base/colector
+        \item Con el uso del multímetro se buscará el hFe del transistor seleccionado
+        \item Para obtener el valor de $I_c$ se debe utilizar ley de Ohm, con la formula $I_c=\frac{V_{cc}}{R_{cc}}$
+        \item Se sustituirán los valores dependiedndo lo calculado, para posteriormente reducir los terminos de arriba y ultimadametne dividir. Obteniendo así en resultado de activación del transistor
+    \end{itemize}
+    \begin{large}
+        \textbf{Ejemplo:}\\\\
+        Se tiene un circuito que va a entregar 5v a un transistor 2N2222 que activara un motor con un consumo de 400mA.\\
+        ¿Cual es la resistencia que se requiere en la base del transistor?\\
+        \begin{enumerate}
+            \item Se identifican los componentes de la formula.\\\\
+            $V_{IN}$ = 5v\\
+            $V_{Activacion}$ = 0.7\\
+            $hFe$ = 75\\
+            $I_{c}$ = 400mA\\
+            \item Reemplazamos en la formula quedando:\\\\
+                $R_{base}= \frac{(5V-0.7V)*75}{0.4A}$\\
+                $*$En la formula se utilizan amperes asi que 400mA = 0.4A.\\\\
+            \item Resolucion de la formula:\\\\
+                Se reduce hasta dejar una simple fracción\\
+                $R_{base}= \frac{(4.3)*75}{0.4A}$\\\\
+                Se resuelve la fracción.\\
+                $R_{base}= \frac{322.5}{0.4A}$\\\\
+                $R_{base}= 806.25\Omega$\\\\
+       
+       
+        \end{enumerate}
+    \end{large}
+\end{large}
+\begin{thebibliography}{}
+\bibitem{formula}\textsc{Anonimo.} \textit{Calcular la resistencia para un transistor accionado por un microcontrolador.} Recuperdo el 29/10/2019 de:\\
+https://www.sistemasorp.es/2011/10/05/calcular-la-resistencia-para-un-transistor-accionado-por-un-microcontrolador/\\
+\bibitem{DataSheet}\textsc{PHILIPS.} \textit{2N2222;2N2222A NPN switching transistors.} Recuperdo el 29/10/2019 de:\\
+https://pdf1.alldatasheet.com/datasheet-pdf/view/15067/PHILIPS/2N2222.html
+
+\end{thebibliography}
+
+
+\end{document}
